@@ -1,0 +1,237 @@
+.about {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about h2 span {
+    color: #00796b;
+}
+
+.about h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #3498db;
+    border-radius: 2px;
+}
+
+.about>p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+}
+
+.about-cards {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 1.2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 0 0 calc(25% - 1.2rem);
+    background: white;
+    border-radius: 8px;
+    padding: 1.2rem 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    z-index: 2;
+}
+
+.mission::before {
+    background: #3498db;
+    /* Blue */
+}
+
+.vision::before {
+    background: #f1c40f;
+    /* Yellow */
+}
+
+.values::before {
+    background: #2ecc71;
+    /* Green */
+}
+
+.legal::before {
+    background: #e74c3c;
+    /* Red */
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.mission:hover::after {
+    background: rgba(52, 152, 219, 0.08);
+    /* Light blue */
+}
+
+.vision:hover::after {
+    background: rgba(241, 196, 15, 0.08);
+    /* Light yellow */
+}
+
+.values:hover::after {
+    background: rgba(46, 204, 113, 0.08);
+    /* Light green */
+}
+
+.legal:hover::after {
+    background: rgba(231, 76, 60, 0.08);
+    /* Light red */
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.8rem;
+    position: relative;
+}
+
+.mission .icon-container {
+    background: rgba(52, 152, 219, 0.1);
+    color: #3498db;
+}
+
+.vision .icon-container {
+    background: rgba(241, 196, 15, 0.1);
+    color: #f1c40f;
+}
+
+.values .icon-container {
+    background: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+}
+
+.legal .icon-container {
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+}
+
+.icon {
+    font-size: 1.4rem;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+        flex: 0 0 calc(50% - 1.2rem);
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 3rem 1.5rem;
+    }
+
+    .about h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-cards {
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+    }
+
+    .card {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 2rem 1rem;
+    }
+
+    .about h2 {
+        font-size: 1.6rem;
+    }
+
+    .icon-container {
+        width: 45px;
+        height: 45px;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+}

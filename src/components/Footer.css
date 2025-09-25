@@ -1,0 +1,99 @@
+.footer {
+    background-color: #00796b;
+    /* teal background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-left img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffcc00;
+    /* gold hover effect */
+}
+
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .footer-left,
+    .footer-links,
+    .footer-contact {
+        flex: unset;
+    }
+
+    .footer-left img {
+        margin: 0 auto 15px;
+        display: block;
+    }
+}
