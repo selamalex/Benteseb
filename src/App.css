@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .App {
@@ -9,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -34,23 +35,28 @@ body {
   text-decoration: none;
 }
 
-/* Hero */
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 3rem 2rem;
+  background-image: url(../public/images/bgpi.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-text {
   max-width: 50%;
+  margin-top: -30px;
 }
 
 .hero-img img {
   max-width: 400px;
 }
 
-/* Numbers */
+
 .numbers {
   text-align: center;
   padding: 2rem;
@@ -68,7 +74,7 @@ body {
   font-size: 1.5rem;
 }
 
-/* Services */
+
 .services {
   padding: 2rem;
   text-align: center;
@@ -86,11 +92,18 @@ body {
   object-fit: cover;
 }
 
-/* Footer */
+
 .footer {
   margin-top: auto;
   padding: 1rem;
   text-align: center;
   background: #222;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: none;
+
+  }
 }

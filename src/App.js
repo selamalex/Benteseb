@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Membership from "./components/Membership";
 import Navbar from "./components/Navbar";
 import Programs from "./components/Programs";
+import Projects from "./components/Project";
 import TestimonialSlider from "./components/TestimonialSlider";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     
       <section className="hero">
         <div className="hero-text">
-          <h1>BE’NTE SEB ASSOCIATION</h1>
+          <h1>BE’NTE SEB </h1>
           <p>
             Student-led healthcare support organization dedicated to improving
             patient care and community wellness at Black Lion Specialized
@@ -27,13 +28,14 @@ function App() {
         </div>
       </section>
 
-     <section className="numbers">
+ 
   <Counter />
-</section>
+
 
 
       <About />
       <Programs />
+      <Projects/>
       <Membership />
       <TestimonialSlider />
       <Footer />

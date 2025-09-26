@@ -1,6 +1,6 @@
 .footer {
     background-color: #00796b;
-    /* teal background */
+
     color: white;
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     gap: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 .footer-left {
@@ -57,7 +58,7 @@
 
 .footer-links ul li a:hover {
     color: #ffcc00;
-    /* gold hover effect */
+
 }
 
 .footer-contact {
@@ -78,7 +79,6 @@
     margin: 6px 0;
 }
 
-/* Responsive layout */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;

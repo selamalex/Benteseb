@@ -21,8 +21,8 @@ export default function Footer() {
       <div className="footer-contact">
         <h4>Contact</h4>
         <p>Black Lion Specialized Hospital, Addis Ababa, Ethiopia</p>
-        <p>Email: info@benteseb.org</p> //I am going to chanfe this later by the real email
-        <p>Phone: +251 900 000 000</p> //and this too
+        <p>Email: info@benteseb.org</p> {/* I am going to change this later by the real email */}
+        <p>Phone: +251 900 000 000</p> {/* and this too */}
       </div>
     </footer>
   );

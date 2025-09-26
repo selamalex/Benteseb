@@ -1,11 +1,27 @@
-import { FaBook, FaHeart, FaMedal, FaStar } from "react-icons/fa";
+import { FaBell, FaHandsHelping, FaMedal, FaUsers } from "react-icons/fa";
 import "./Membership.css";
 
 const benefits = [
-  { title: "Exclusive Events", desc: "Special access to conferences and workshops", icon: <FaStar color="gold" /> },
-  { title: "Recognition", desc: "Official recognition for volunteer work", icon: <FaMedal color="green" /> },
-  { title: "Resources", desc: "Access to learning materials and guides", icon: <FaBook color="blue" /> },
-  { title: "Impact", desc: "Regular updates on your contributions", icon: <FaHeart color="red" /> },
+  { 
+    title: "Stay Informed", 
+    desc: "Receive regular updates on our work and events.", 
+    icon: <FaBell color="orange" /> 
+  },
+  { 
+    title: "Get Involved", 
+    desc: "Join training, volunteering, and outreach opportunities.", 
+    icon: <FaHandsHelping color="teal" /> 
+  },
+  { 
+    title: "Earn Recognition", 
+    desc: "Receive recognition and certificates for active members.", 
+    icon: <FaMedal color="green" /> 
+  },
+  { 
+    title: "Build Connections", 
+    desc: "Be part of a network that shares your values.", 
+    icon: <FaUsers color="blue" /> 
+  },
 ];
 
 function Membership() {
@@ -26,6 +42,17 @@ function Membership() {
             <p>{benefit.desc}</p>
           </div>
         ))}
+      </div>
+
+      <div className="join-button-container">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfqtpp_foSw5QSKH3MdjYIwQqQdTUFt8MLEvceklRWcCiUynw/closedform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="join-button"
+        >
+          Become a Member
+        </a>
       </div>
     </section>
   );

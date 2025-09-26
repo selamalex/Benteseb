@@ -1,13 +1,14 @@
 .counter-container {
     display: flex;
     justify-content: center;
-    /* centers counters horizontally */
+
     align-items: center;
     flex-wrap: wrap;
     background: #80cbc4;
     padding: 30px 0;
     gap: 40px;
-    /* more space between counters */
+
+
 }
 
 .counter-box {
@@ -18,7 +19,7 @@
     background: rgba(255, 255, 255, 0.15);
     min-width: 160px;
     flex: 0 1 auto;
-    /* prevents stretching */
+
 }
 
 .counter {

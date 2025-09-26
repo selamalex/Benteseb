@@ -16,28 +16,28 @@ export default function About() {
             <FaBullseye className="icon" />
           </div>
           <h3>Mission</h3>
-          <p>To bridge the gap between healthcare providers and patients through compassionate support, education, and community outreach, while fostering professional development among healthcare students at Block Lion Specialized Hospital.</p>
+          <p>To enhance patient care through innovative student-led initiatives and foster a supportive environment for both patients and healthcare providers at Black Lion Specialized Hospital.</p>
         </div>
         <div className="card vision">
           <div className="icon-container">
             <FaEye className="icon" />
           </div>
           <h3>Vision</h3>
-          <p>To be a leading student-led association in healthcare advocacy and patient support, creating a more compassionate and effective healthcare ecosystem for all.</p>
+          <p>To be a leading student association in healthcare, known for its commitment to excellence and compassionate care.</p>
         </div>
         <div className="card values">
           <div className="icon-container">
             <FaHeart className="icon" />
           </div>
           <h3>Values</h3>
-          <p>Integrity, compassion, service excellence, collaboration, and innovation guide everything we do in serving our community.</p>
+          <p>Rooted in compassion, excellence, innovation, collaboration, integrity, and service.  Guiding us to care with empathy, strive for the highest standards, create solutions, work together, act with honesty, and give back to our community.</p>
         </div>
         <div className="card legal">
           <div className="icon-container">
             <FaCertificate className="icon" />
           </div>
           <h3>Legal Recognition</h3>
-          <p>Officially recognized and registered under the Ethiopian Civil Society Organization Proclamation, with registration number 4567/2023.</p>
+          <p>legally registered and recognized by FDRE Civil Society Organization since December, 2024.</p>
         </div>
       </div>
     </section>

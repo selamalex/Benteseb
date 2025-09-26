@@ -32,9 +32,13 @@ function Navbar() {
         <li><a href="#membership" onClick={() => setMenuOpen(false)}>Membership</a></li>
         <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
         <li>
+          <a  href="https://docs.google.com/forms/d/e/1FAIpQLSfqtpp_foSw5QSKH3MdjYIwQqQdTUFt8MLEvceklRWcCiUynw/closedform"
+          target="_blank"
+          rel="noopener noreferrer">
           <button className="join-btn" onClick={() => setMenuOpen(false)}>
             Join Us
           </button>
+          </a>
         </li>
       </ul>
     </nav>

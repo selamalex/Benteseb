@@ -36,7 +36,7 @@
 
 .about-cards {
     display: flex;
-    /* flex-wrap: wrap; */
+
     justify-content: center;
     gap: 1.2rem;
     max-width: 1000px;
@@ -72,22 +72,22 @@
 
 .mission::before {
     background: #3498db;
-    /* Blue */
+
 }
 
 .vision::before {
     background: #f1c40f;
-    /* Yellow */
+
 }
 
 .values::before {
     background: #2ecc71;
-    /* Green */
+
 }
 
 .legal::before {
     background: #e74c3c;
-    /* Red */
+
 }
 
 .card::after {
@@ -104,22 +104,22 @@
 
 .mission:hover::after {
     background: rgba(52, 152, 219, 0.08);
-    /* Light blue */
+
 }
 
 .vision:hover::after {
     background: rgba(241, 196, 15, 0.08);
-    /* Light yellow */
+
 }
 
 .values:hover::after {
     background: rgba(46, 204, 113, 0.08);
-    /* Light green */
+
 }
 
 .legal:hover::after {
     background: rgba(231, 76, 60, 0.08);
-    /* Light red */
+
 }
 
 .card:hover {

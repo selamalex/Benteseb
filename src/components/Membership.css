@@ -2,6 +2,7 @@
     padding: 60px 20px;
     text-align: center;
     background: #f0f8f8;
+
 }
 
 .membership h2 {
@@ -53,7 +54,7 @@
     color: #555;
 }
 
-/* Hover lift effect */
+
 .membership-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -61,14 +62,35 @@
 
 .membership-card .icon {
     font-size: 2.5rem;
-    /* bigger icons */
+
     color: #00796b;
-    /* match your theme */
     margin-bottom: 10px;
 }
 
+.join-button-container {
+    margin-top: 2rem;
+    text-align: center;
+}
 
-/* Responsive */
+.join-button {
+    display: inline-block;
+    background-color: #00796b;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.join-button:hover {
+    background-color: #004d40;
+    transform: translateY(-3px);
+}
+
+
+
 @media(max-width: 1024px) {
     .membership-cards {
         flex-direction: column;

@@ -1,40 +1,47 @@
+import {
+  GraduationCap,
+  Heart,
+  Languages,
+  MonitorSmartphone,
+  Users,
+} from "lucide-react";
 import "./Programs.css";
 
 const programs = [
   {
-    title: "Patient Support",
+    title: "Department of Psychological Support",
     description:
-      "Providing emotional support, companionship, and assistance to patients and their families during hospital stays and treatment periods.",
+      "Provides emotional support by organizing patient visits, assigning volunteers, and collaborating with Black Lion Hospital social workers.",
     color: "#FF4D4D",
-    icon: "❤️",
+    icon: <Heart size={40} />,
   },
   {
-    title: "Student Training",
+    title: "Department of Community Outreach",
     description:
-      "Organizing training sessions for healthcare students on patient interaction, ethics, and professional development.",
-    color: "#5B7FFF",
-    icon: "🎓",
+      "Promotes health education through fairs, screenings, partnerships, and fundraising to encourage preventive care and healthier lifestyles.",
+    color: "#27AE60",
+    icon: <Users size={40} />,
   },
   {
-    title: "Medical Assistance",
+    title: "Department of Capacity Building",
     description:
-      "Supporting healthcare staff with patient care activities and administrative tasks under proper supervision.",
-    color: "#2ECC71",
-    icon: "🩺",
+      "Strengthens knowledge and skills by offering training sessions and workshops for members and volunteers.",
+    color: "#2980B9",
+    icon: <GraduationCap size={40} />,
   },
   {
-    title: "Fund Raising",
+    title: "Department of Language",
     description:
-      "Raising funds to support medical equipment, patient care supplies, and community health initiatives through various events.",
-    color: "#F5A623",
-    icon: "💰",
-  },
-  {
-    title: "Partnership Building",
-    description:
-      "Establishing partnerships with healthcare institutions, NGOs, and community organizations for collaborative projects.",
+      "Bridges communication gaps by addressing language barriers, offering sign language support, and creating clear multilingual hospital way-finding signs.",
     color: "#9B59B6",
-    icon: "🤝",
+    icon: <Languages size={40} />,
+  },
+  {
+    title: "Department of Digital Health",
+    description:
+      "Leverages technology to solve hospital challenges, from developing sign-language translation apps to producing digital tools for health promotion.",
+    color: "#F39C12",
+    icon: <MonitorSmartphone size={40} />,
   },
 ];
 
@@ -42,11 +49,12 @@ function Programs() {
   return (
     <section className="programs" id="programs">
       <h2>
-        Our Programs <span>& Activities</span>
+        Our <span>Departments</span>
       </h2>
       <p>
-        We run comprehensive programs designed to support patients, educate
-        communities, and develop healthcare professionals.
+        We are organized into specialized departments that address diverse needs,
+        from emotional support to digital innovation, ensuring holistic care and
+        community impact.
       </p>
       <div className="program-cards">
         {programs.map((program, idx) => (
